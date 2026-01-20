@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprobar nota</title>
+</head>
+<body>
+
+    <h2>Comprobar nota del alumno</h2>
+    <button onclick="comprobarNota()">Introducir nota</button>
+
+    <script>
+        function comprobarNota() {
+            let nota = prompt("Introduce la nota del alumno (1 a 10):");
+            nota = Number(nota);
+
+            if (nota < 5) {
+                alert("El alumno suspende");
+            } else {
+                alert("El alumno aprueba");
+            }
+        }
+    </script>
+
+</body>
+</html>
